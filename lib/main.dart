@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:good_sec_test/screens/order_fund_screen.dart';
+import 'package:good_sec_test/screens/stock_price_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:OrderFundScreen()
+      home:StockPriceScreen()
     );
   }
 }
