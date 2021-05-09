@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key key}) : super(key: key);
-
+   Home({Key key}) : super(key: key);
+  int tableCol = 15;
   @override
   Widget build(BuildContext context) {
     ScreenUtil.init(context, width: 750, height: 1334, allowFontScaling: false);
@@ -133,208 +133,27 @@ class Home extends StatelessWidget {
               height: ScreenUtil().setHeight(30),
             ),
             Container(
+              decoration: BoxDecoration(
+                border: Border(
+                  // top: BorderSide(width: 1, color: Colors.black),
+                  // right: BorderSide(width: 1, color: Colors.black),
+                  // left: BorderSide(width: 1, color: Colors.black),
+                  // bottom: BorderSide(width: 1, color: Colors.black),
+                ),
+              ),
               margin: EdgeInsets.symmetric(
                   vertical: ScreenUtil().setHeight(15),
                   horizontal: ScreenUtil().setWidth(30)),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Expanded(flex: 1, child: table("APU")),
-                      Expanded(
-                        flex: 6,
-                        child: Container(
-                          height: ScreenUtil().setHeight(130),
-                          decoration: BoxDecoration(
-                            border: Border(
-                              top: BorderSide(width: 1, color: Colors.black),
-                              right: BorderSide(width: 1, color: Colors.black),
-                            ),
-                          ),
-                          child: Row(
-                            children: [
-                              Expanded(
-                                flex: 3,
-                                child: Column(
-                                  children: [
-                                    Expanded(
-                                        flex: 1,
-                                        child: textTitle(
-                                            "Өмнөх хаалт",
-                                            "596.22",
-                                            Colors.black,
-                                            Colors.black,
-                                            21,
-                                            4,
-                                            10,
-                                            10,
-                                            0)),
-                                    Expanded(
-                                        flex: 1,
-                                        child: textTitle(
-                                            "Нээлт",
-                                            "590",
-                                            Colors.black,
-                                            Colors.black,
-                                            21,
-                                            0,
-                                            10,
-                                            10,
-                                            4)),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                flex: 3,
-                                child: Column(
-                                  children: [
-                                    Expanded(
-                                        flex: 1,
-                                        child: textTitle(
-                                            "Сүүлийн ханш",
-                                            "590",
-                                            Colors.black,
-                                            Colors.green,
-                                            21,
-                                            4,
-                                            10,
-                                            10,
-                                            0)),
-                                    Expanded(
-                                        flex: 1,
-                                        child: textTitle(
-                                            "Хаалт",
-                                            "591",
-                                            Colors.black,
-                                            Colors.black,
-                                            21,
-                                            0,
-                                            10,
-                                            10,
-                                            4)),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                flex: 3,
-                                child: Column(
-                                  children: [
-                                    Expanded(
-                                        flex: 1,
-                                        child: textTitle(
-                                            "Дээд",
-                                            "607.99",
-                                            Colors.black,
-                                            Colors.black,
-                                            21,
-                                            4,
-                                            10,
-                                            10,
-                                            0)),
-                                    Expanded(
-                                        flex: 1,
-                                        child: textTitle(
-                                            "Доод",
-                                            "590",
-                                            Colors.black,
-                                            Colors.black,
-                                            21,
-                                            0,
-                                            10,
-                                            10,
-                                            4)),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                flex: 2,
-                                child: Container(
-                                  child: IconButton(
-                                    icon: Icon(
-                                      Icons.arrow_downward,
-                                      color: Colors.red,
-                                    ),
-                                    onPressed: () {},
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Expanded(flex: 1, child: table("LEND")),
-                      Expanded(
-                        flex: 6,
-                        child: Container(
-                          height: ScreenUtil().setHeight(130),
-                          decoration: BoxDecoration(
-                            border: Border(
-                              top: BorderSide(width: 1, color: Colors.black),
-                              right: BorderSide(width: 1, color: Colors.black),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Expanded(flex: 1, child: table("")),
-                      Expanded(
-                        flex: 6,
-                        child: Container(
-                          height: ScreenUtil().setHeight(130),
-                          decoration: BoxDecoration(
-                            border: Border(
-                              top: BorderSide(width: 1, color: Colors.black),
-                              right: BorderSide(width: 1, color: Colors.black),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Expanded(flex: 1, child: table("")),
-                      Expanded(
-                        flex: 6,
-                        child: Container(
-                          height: ScreenUtil().setHeight(130),
-                          decoration: BoxDecoration(
-                            border: Border(
-                              top: BorderSide(width: 1, color: Colors.black),
-                              right: BorderSide(width: 1, color: Colors.black),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    children: [
-                      Expanded(flex: 1, child: table("")),
-                      Expanded(
-                        flex: 6,
-                        child: Container(
-                          height: ScreenUtil().setHeight(130),
-                          decoration: BoxDecoration(
-                            border: Border(
-                              top: BorderSide(width: 1, color: Colors.black),
-                              right: BorderSide(width: 1, color: Colors.black),
-                              bottom: BorderSide(width: 1, color: Colors.black),
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
+              child:
+
+              Container(
+                height: ScreenUtil().setHeight(800),
+                child: ListView.builder(
+                    itemCount: tableCol,
+                    itemBuilder: (_,int index){
+                  return buildColumn(index);
+                }),
+              )
             )
           ],
         ),
@@ -348,10 +167,10 @@ class Home extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         border: Border(
-          top: BorderSide(width: 1, color: Colors.black),
+          // top: BorderSide(width: 1, color: Colors.black),
           right: BorderSide(width: 1, color: Colors.black),
-          left: BorderSide(width: 1, color: Colors.black),
-          bottom: BorderSide(width: 1, color: Colors.black),
+          // left: BorderSide(width: 1, color: Colors.black),
+          // bottom: BorderSide(width: 1, color: Colors.black),
         ),
       ),
       child: Text("${text}"),
@@ -415,6 +234,145 @@ class Home extends StatelessWidget {
                   color: color1),
             ),
           )
+        ],
+      ),
+    );
+  }
+  Widget buildColumn(int index){
+    return Container(
+      decoration: BoxDecoration(
+        border: Border(
+          top: BorderSide(width: 1, color: Colors.black),
+          right: BorderSide(width: 1, color: Colors.black),
+          left: BorderSide(width: 1, color: Colors.black),
+          bottom: index==tableCol-1?BorderSide(width: 0.5, color: Colors.black):BorderSide(width: 0, ),
+        ),
+      ),
+      child: Row(
+        children: [
+          Expanded(flex: 1, child: table("APU")),
+          Expanded(
+            flex: 6,
+            child: Container(
+              height: ScreenUtil().setHeight(130),
+              decoration: BoxDecoration(
+                border: Border(
+                  // top: BorderSide(width: 1, color: Colors.black),
+                  // right: BorderSide(width: 1, color: Colors.black),
+                ),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 3,
+                    child: Column(
+
+                      children: [
+                        Expanded(
+                            flex: 1,
+                            child: textTitle(
+                                "Өмнөх хаалт",
+                                "596.22",
+                                Colors.black,
+                                Colors.black,
+                                21,
+                                4,
+                                10,
+                                10,
+                                0)),
+                        Expanded(
+                            flex: 1,
+                            child: textTitle(
+                                "Нээлт",
+                                "590",
+                                Colors.black,
+                                Colors.black,
+                                21,
+                                0,
+                                10,
+                                10,
+                                4)),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Column(
+                      children: [
+                        Expanded(
+                            flex: 1,
+                            child: textTitle(
+                                "Сүүлийн ханш",
+                                "590",
+                                Colors.black,
+                                Colors.green,
+                                20,
+                                4,
+                                10,
+                                10,
+                                0)),
+                        Expanded(
+                            flex: 1,
+                            child: textTitle(
+                                "Хаалт",
+                                "591",
+                                Colors.black,
+                                Colors.black,
+                                20,
+                                0,
+                                10,
+                                10,
+                                4)),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 3,
+                    child: Column(
+                      children: [
+                        Expanded(
+                            flex: 1,
+                            child: textTitle(
+                                "Дээд",
+                                "607.99",
+                                Colors.black,
+                                Colors.black,
+                                20,
+                                4,
+                                10,
+                                10,
+                                0)),
+                        Expanded(
+                            flex: 1,
+                            child: textTitle(
+                                "Доод",
+                                "590",
+                                Colors.black,
+                                Colors.black,
+                                20,
+                                0,
+                                10,
+                                10,
+                                4)),
+                      ],
+                    ),
+                  ),
+                  Expanded(
+                    flex: 2,
+                    child: Container(
+                      child: IconButton(
+                        icon: Icon(
+                          Icons.arrow_downward,
+                          color: Colors.red,
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
